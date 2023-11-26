@@ -1,19 +1,9 @@
 #+title: ROSConDE 2023 Notes
 #+options: toc:1
 
-* Software Tools
-** [[https://www.sphinx-needs.com/][sphinx-needs]]
-Sphinx-Needs is an extension for the Python based documentation framework
-Sphinx, which you can simply extend by different extensions to fulfill nearly
-any requirement of a software development team.
-** [[https://www.ansible.com/][Ansible]]
-Ansible is a powerful automation tool used in IT to simplify tasks like setting
-up servers, managing configurations, and deploying applications. It works by
-letting you write simple scripts (playbooks) that describe the steps needed for
-these tasks, making it easier to manage and scale large systems efficiently.
-With Ansible, you can automate repetitive tasks and manage multiple devices or
-servers from one place, saving time and reducing errors in the process.
-** [[https://foxglove.dev/][foxglove]]
+* Software
+** ROS
+*** [[https://foxglove.dev/][foxglove]]
 Foxglove Studio is a powerful software tool used in robotics and automation to
 visualize, debug, and analyze data from sensors and machines. It helps engineers
 and developers understand how robots and systems are performing by providing a
@@ -21,29 +11,17 @@ user-friendly interface to view, analyze, and troubleshoot data collected from
 various sensors and devices. Foxglove Studio plays a vital role in enhancing the
 development and debugging process, allowing for more efficient and effective
 robotics and automation systems.
-** [[https://github.com/ros2/ros2_tracing][ros2_tracing]]
+*** [[https://github.com/ros2/ros2_tracing][ ~ros2_tracing~ ]]
 ros2_tracing is a toolkit designed for ROS 2 (Robot Operating System 2) that
 enables tracing and instrumentation within ROS 2 packages. It provides tools for
 configuring tracing and offers a low-overhead framework for real-time tracing of
 ROS 2 applications.
-** [[https://github.com/ros/diagnostics][diagnostics]]
+*** [[https://github.com/ros/diagnostics][diagnostics]]
 The diagnostics system in ROS (Robot Operating System) is all about gathering
 and analyzing data from hardware and drivers in robots. It collects information
 about devices, their status, and values, sharing it via a special topic called
 ~/diagnostics~.
-** [[https://perf.wiki.kernel.org/index.php/Main_Page][perf]]
-~perf~ is a powerful performance analysis tool used in Linux systems to gather
-detailed insights into program execution. It provides various functionalities to
-measure and analyze the performance of applications and the system as a whole.
-~perf~ can track events such as CPU instructions, cache misses, and hardware
-performance counters. It helps identify performance bottlenecks, optimize code,
-and enhance overall system efficiency by offering detailed reports and metrics
-for analysis.
-** [[https://github.com/brendangregg/FlameGraph][flamegraps]]
-Flame graphs are a visualization of hierarchical data, created to visualize
-stack traces of profiled software so that the most frequent code-paths to be
-identified quickly and accurately.
-** [[https://github.com/ros2/launch/tree/rolling/launch_testing][launch_testing]]
+*** [[https://github.com/ros2/launch/tree/rolling/launch_testing][ ~launch_testing~ ]]
 This tool is a framework for launch integration testing. For example:
 + The exit codes of all processes are available to the tests.
 + Tests can check that all processes shut down normally, or with specific exit codes.
@@ -51,12 +29,7 @@ This tool is a framework for launch integration testing. For example:
 + The stdout and stderr of all processes are available to the tests.
 + The command-line used to launch the processes are available to the tests.
 + Some tests run concurrently with the launch and can interact with the running processes.
-** [[https://www.getxray.app/][Xray]]
-Xray is a comprehensive test management tool designed to streamline and enhance
-software testing processes. Its primary features revolve around test planning,
-execution, and reporting, aiding quality assurance teams and developers in
-managing and tracking their testing activities efficiently.
-** [[https://spectrum.ieee.org/apexos-operating-system-open-source-autonomous-cars][Apex.os]]
+*** [[https://spectrum.ieee.org/apexos-operating-system-open-source-autonomous-cars][Apex.os]]
 Apex.OS is a fork of ROS 2 that has been made robust and reliable so that it can
 be used for the development and deployment of highly safety-critical systems
 such as autonomous vehicles, robots, and aerospace applications. Apex.OS is
@@ -65,7 +38,38 @@ driving software and other safety-critical mobility applications. The components
 enable customers to focus on building their specific applications without having
 to worry about message passing, reliable real-time execution, hardware
 integration, and more.
-** [[http://gtsam.org/][GTSAM]]
+** Other
+*** [[https://www.sphinx-needs.com/][sphinx-needs]]
+Sphinx-Needs is an extension for the Python based documentation framework
+Sphinx, which you can simply extend by different extensions to fulfill nearly
+any requirement of a software development team.
+*** [[https://www.ansible.com/][Ansible]]
+Ansible is a powerful automation tool used in IT to simplify tasks like setting
+up servers, managing configurations, and deploying applications. It works by
+letting you write simple scripts (playbooks) that describe the steps needed for
+these tasks, making it easier to manage and scale large systems efficiently.
+With Ansible, you can automate repetitive tasks and manage multiple devices or
+servers from one place, saving time and reducing errors in the process.
+*** [[https://perf.wiki.kernel.org/index.php/Main_Page][perf]]
+~perf~ is a powerful performance analysis tool used in Linux systems to gather
+detailed insights into program execution. It provides various functionalities to
+measure and analyze the performance of applications and the system as a whole.
+~perf~ can track events such as CPU instructions, cache misses, and hardware
+performance counters. It helps identify performance bottlenecks, optimize code,
+and enhance overall system efficiency by offering detailed reports and metrics
+for analysis.
+*** [[https://github.com/brendangregg/FlameGraph][flamegraps]]
+Flame graphs are a visualization of hierarchical data, created to visualize
+stack traces of profiled software so that the most frequent code-paths to be
+identified quickly and accurately.
+*** [[https://www.getxray.app/][Xray]]
+Xray is a comprehensive test management tool designed to streamline and enhance
+software testing processes. Its primary features revolve around test planning,
+execution, and reporting, aiding quality assurance teams and developers in
+managing and tracking their testing activities efficiently.
+*** [[https://nodered.org/][Node-RED]]
+Low-code programming for event-driven applications.
+*** [[http://gtsam.org/][GTSAM]]
 GTSAM is a BSD-licensed C++ library that implements sensor fusion for
 robotics and computer vision applications, including SLAM (Simultaneous
 Localization and Mapping), VO (Visual Odometry), and SFM (Structure from
@@ -74,8 +78,6 @@ paradigm rather than sparse matrices to optimize for the most probable
 configuration or an optimal plan. Coupled with a capable sensor front-end (not
 provided here), GTSAM powers many impressive autonomous systems, in both
 academia and industry.
-** [[https://nodered.org/][Node-RED]]
-Low-code programming for event-driven applications.
 * Hardware
 ** [[https://www.stereolabs.com/][Stereo cameras from STEREOLabs.]]
 ** [[https://www.dji.com/de/robomaster-s1][Robomaster S1 can be used as a robotic education kit.]]
