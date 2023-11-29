@@ -38,6 +38,46 @@ driving software and other safety-critical mobility applications. The components
 enable customers to focus on building their specific applications without having
 to worry about message passing, reliable real-time execution, hardware
 integration, and more.
+*** [[https://qgis.org/en/site/][QGIS]]
+QGIS is a user friendly Open Source Geographic Information System (GIS) licensed
+under the GNU General Public License. QGIS is an official project of the Open
+Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows
+and Android and supports numerous vector, raster, and database formats and
+functionalities.
+https://github.com/AIT-Assistive-Autonomous-Systems/postgis_ros_bridge_demo_workspace
+*** [[https://github.com/kuberos-io][kuberos-io]]
+An ongoing project for the deployment of ROS 2 software using Kubernetes.
+*** [[https://gitlab.uni-koblenz.de/intas/vacusim][VacuSim]]
+This project includes a driver for a robot vacuum cleaner as well as a
+benchmarking tool, which makes it possible to gain first experiences in
+programming robots using ROS 2 Humble. The scenario is an apartment that is to
+be cleaned. The driver provides interfaces to actuators and sensors of the
+robot. The benchmarking tool evaluates the cleaning process. The focus is on
+taking the best possible route through the apartment so that the largest
+possible area is covered and the floor is cleaned as well as possible.
+*** [[https://github.com/andreasBihlmaier/robotics_fundamentals_ros_gazebo][Learning Robotics Fundamentals with ROS 2 and modern Gazebo]]
+This can help beginers get to understand robotics fundamentals by using ROS 2
+and Gazebo.
+*** [[https://github.com/StoglRobotics/ros_team_workspace][ROS Team Workspace]]
+Ros Team Workspace (RosTeamWS) is a framework for boosting collaboration in
+teams when developing software for robots using Robot Operating System (ROS). It
+supports both ROS and ROS 2. Its main goal is to optimize the workflow of
+development teams and focus more on programming robots.
+*** [[https://github.com/ika-rwth-aachen/docker-ros][docker-ros]], [[https://github.com/ika-rwth-aachen/docker-ros-ml-images][docker-ros-ml-images]], [[https://github.com/ika-rwth-aachen/docker-run][docker-run]]
+Tools, developed by Institut für Kraftfahrzeuge, RWTH Aachen, for automatically
+builds development and deployment Docker images for ROS-based repositories.
+*** [[https://github.com/SICKAG/sick_safevisionary_ros2][Sick safeVisionary2]]
+The official ROS2 driver for the Sick safeVisionary2 cameras.
+*** [[https://github.com/4am-robotics/robmuxinator][robmuxinator]]
+The robmuxinator script serves as a command-line tool to manage and control tmux
+sessions on multiple hosts of your robot. If you use ~tmux~ you will love
+~robmuxinator~! It is designed to simplify the execution of various commands. You
+can for example launch processes of your ROS bringup and application or run a
+Docker container with it.
+*** [[https://www.ivi.fraunhofer.de/content/dam/ivi/de/dokumente/flyer/FL_Hely_OS_Landwirtschaft_web.pdf][HelyOS]]
+Das Open-Source-Framework für Leitstände für mobile Roboter.
+Related repos: https://github.com/FraunhoferIVI
+
 ** Other
 *** [[https://www.sphinx-needs.com/][sphinx-needs]]
 Sphinx-Needs is an extension for the Python based documentation framework
@@ -78,6 +118,20 @@ paradigm rather than sparse matrices to optimize for the most probable
 configuration or an optimal plan. Coupled with a capable sensor front-end (not
 provided here), GTSAM powers many impressive autonomous systems, in both
 academia and industry.
+*** [[https://github.com/WBK-Robotics/pybullet_industrial][pybullet Industrial]]
+~Pybullet_industrial~ is a process-aware robot simulation. It aims to enable
+scientists and researchers to easily simulate robotics scenarios where a robot
+is participating in a manufacturing process. It achieves this by combining the
+world of classical robot simulations with the world of industrial processes. The
+library is capable of simulating different manufacturing tools and workpieces,
+as well as the robot itself. With the help of the pybullet_industrial package
+you will be able to:
+
++ simulate additive manufacturing processes
++ simulate milling processes and how the resulting forces impact the robot
++ simulating paint coating scenarios
++ simulate the handling of complex tasks using a variety of grippers
+
 * Hardware
 ** [[https://www.stereolabs.com/][Stereo cameras from STEREOLabs.]]
 ** [[https://www.dji.com/de/robomaster-s1][Robomaster S1 can be used as a robotic education kit.]]
@@ -119,3 +173,4 @@ Monitor for determinism. how old are the data when being used
 ** Unique components -> Closed source. Others -> open source.
 ** Pay attention to implicit patent liscence when releasing open source software
 ** ISaac Sim Omnigraph
+** ROS bei AGCO sein 10 Jahren
