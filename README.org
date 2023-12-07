@@ -1,6 +1,8 @@
 #+title: ROSConDE 2023 Notes
 #+options: toc:1
 
+Still work-in-progress.
+
 * Software
 ** ROS
 *** [[https://foxglove.dev/][foxglove]]
@@ -173,4 +175,116 @@ Monitor for determinism. how old are the data when being used
 ** Unique components -> Closed source. Others -> open source.
 ** Pay attention to implicit patent liscence when releasing open source software
 ** ISaac Sim Omnigraph
-** ROS bei AGCO sein 10 Jahren
+** ROS bei AGCO seit 10 Jahren
+
+* To be merged
+** 09:08 helyOS - Das Open-Source-Framework für Leitstände für mobile Roboter
++ [X] helyOS: github.com/FraunhoferIVI
+** 09:23 ROSbloX: Schnelleinstieg in hochwertige ROS-Robotik ohne Vorkenntnisse
++ [ ] ROSbloX: building blocks for Einstieg in Roboter
++ [ ] Ethernet over USB
++ [ ] foxglove Studio server
++ [ ] roslibpy: connecting to rosbridge
+
+** 09:42 Jenseits von RRTConnect: Plannerwahl in Moveit2
++ [ ] Planners
+  - OMPL: library for sampling-based planning
+  - CHOMP: Covariant Hamiltonian Optimization for Motion Planning
+  - STOMP: Stochastic Trajectory Optimization for Mtion Planning
+  - PILZ Industrial Motion Planner
+  - See the photo for a summary
++ [ ] Parallel planning with all planners: it will though not be better als the best single planner.
++ [ ] MoveIt Studio
+** 10:15 ROS-2 communication optimization using Zenoh ROS 2 Bridge
++ [ ] Zenoh selected as the first non DDS protocol to be natively supported
++ [ ] Intrinsic implementing Zenoh RMWas the major contribution for ROS2 2024 release
++ [ ] Zenoh supports any topology: peer to peer, brokered, routed
++ [ ] Check: MQTT
++ [ ] Repo zenoh-plugin-ros2dds
+** 10:45 CI/CD Tools for Scaling of AMR Software Rollouts
++ [ ] Firma: Node Robotics
++ [ ] Check their gitlab repos. It seems that the projects are still closed-source.
+** 11:45 Integration der ETSI ITS Nachrichten für V2X-Kommunikation in ROS
+** 12:07 Intel Robotics SDK for Industrial Applications
++ [ ] Check: Intel Robotics SDK intel.com/robotics
++ [ ] Check: openvino (AI inference engine)
++ [ ] Check: OneAPI
++ [ ] Check Intel edge software community amrdocs.intel.com
+** 12:23 Lightning talk
+*** ROS: Nicht nur für Roboter, sondern auch für Rucksäcker im Wald
+Pointcloud of forest is taken with camera on the Rucksack..
+*** cobot hub
++ cobothub.de
++ plattform unabhängig.
++ Decouple hardware from software
+*** Effiziente Segmentierung von 3D-Punktwolken (intel)
+*** Scenario-Execution: repeatable test scenarios. Not yet open source.
+*** ros-nvim
+*** filics: cool small AGVs for forklifter without forklifter
++ Use webots for simulation
+*** roslaunch mit mehr als einem roboter
+*** Eurobot - wettbewerb
+*** ros_license_toolkit: github.com/boschresearch/ros_license_toolkit
+*** Delibration working group
++ groups.google.com/g/ros-wg-deliberation
++ github: Awesome ros Deliberation
+*** Deleh/gis: Status summary of multiple git repositories
+*** Automated and Connected Driving challenges (ACDC)
+On github.
+** 14:00 Lernen
+** 11:15 Unter der Oberfläche: Die ROS-Entwicklung bei Cellumation
+Transport von Fördergut
++ [ ] Port zu ROS2
++ [ ] Own node lifecyle management
++ [ ] ROS2 does not support the array of paramter anymore
++ [ ] Cost of the Port: 6PM
+  - 1 PM nur bugs finden und fixen in rclcpp etc.
+  - 0.5 PM fastDDS
++ [ ] Unexpected problem: siehe bilder
++ [ ] The good: siehe bilder
++ [ ] Fazit: siehe bilder
+** 11:45 Integration der ETSI ITS Nachrichten für V2X-Kommunikation in ROS
+** 12:07 Intel Robotics SDK for Industrial Applications
++ [ ] Check: Intel Robotics SDK intel.com/robotics
++ [ ] Check: openvino (AI inference engine)
++ [ ] Check: OneAPI
++ [ ] Check Intel edge software community amrdocs.intel.com
+** 12:23 Lightning talk
+*** ROS: Nicht nur für Roboter, sondern auch für Rucksäcker im Wald
+Pointcloud of forest is taken with camera on the Rucksack..
+*** cobot hub
++ cobothub.de
++ plattform unabhängig.
++ Decouple hardware from software
+*** Effiziente Segmentierung von 3D-Punktwolken (intel)
+*** Scenario-Execution: repeatable test scenarios. Not yet open source.
+*** ros-nvim
+*** filics: cool small AGVs for forklifter without forklifter
++ Use webots for simulation
+*** roslaunch mit mehr als einem roboter
+*** Eurobot - wettbewerb
+*** ros_license_toolkit: github.com/boschresearch/ros_license_toolkit
+*** Delibration working group
++ groups.google.com/g/ros-wg-deliberation
++ github: Awesome ros Deliberation
+*** Deleh/gis: Status summary of multiple git repositories
+*** Automated and Connected Driving challenges (ACDC)
+On github.
+** 14:00 Lernende Roboter mit Skill(s)
++ [ ] iiwa-ros
++ [ ] github: cartesian_trajectory_generator
++ [ ] github: skiROS2
++ [ ] github: hypermapper: bayer optimization
++ [ ] github: SkiROS2_skill_learning_demo
+** 14:26 Wie einfach ist die System (Hardware) Integration mit ROS 2?
++ [ ] Integrierte Hardware Mocking von ros2_control
++ [ ] Software Dev Ablauf für Hardware (sieh bild)
++ [ ] Neues Modul ... Ablauf (sieh bild)
+** 14:47 ros_bt_py
+As alternative to BehaviorTree.CPP2
++ [ ] Comparison to BehaviorTree.CPP2 (sieh bild)
+** 15:09 Auftragssteuerung einer ROS-Basierten Flotte
+** 15:21 Safety in der freien Navigation
+** 15:35 Hacking the Robomaster
+CAN communication. SocketCAN
+- [ ] github: robomaster_can_controller
